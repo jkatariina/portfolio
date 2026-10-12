@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useReducedMotion from "./useReducedMotion.js";
+import asset from "../data/asset.js";
 
 export default function Thumb({ src, video, alt, label, className = "thumb" }) {
   const [failed, setFailed] = useState(false);
@@ -10,8 +11,8 @@ export default function Thumb({ src, video, alt, label, className = "thumb" }) {
     return (
       <div className={className}>
         <video
-          src={video}
-          poster={showImage ? src : undefined}
+          src={asset(video)}
+          poster={showImage ? asset(src) : undefined}
           autoPlay={!reduced}
           controls={reduced}
           preload={reduced ? "none" : "auto"}
@@ -27,7 +28,7 @@ export default function Thumb({ src, video, alt, label, className = "thumb" }) {
   return (
     <div className={className}>
       {showImage ? (
-        <img src={src} alt={alt} onError={() => setFailed(true)} loading="lazy" />
+        <img src={asset(src)} alt={alt} onError={() => setFailed(true)} loading="lazy" />
       ) : (
         <p className="thumb__empty">{label}</p>
       )}

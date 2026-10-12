@@ -13,5 +13,6 @@ npm run build    # production build into dist/
 
 ## Deploying
 
-Build command `npm run build`, publish directory `dist`. `public/_redirects`
-handles client-side routes on Netlify.
+Pushing to `main` builds and deploys to GitHub Pages automatically
+(`.github/workflows/deploy.yml`). Live at
+https://jkatariina.github.io/portfolio/

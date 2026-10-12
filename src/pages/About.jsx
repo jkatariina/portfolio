@@ -1,6 +1,7 @@
 import PageTitle from "../components/PageTitle.jsx";
 import Thumb from "../components/Thumb.jsx";
 import { site } from "../data/site.js";
+import asset from "../data/asset.js";
 
 export default function About() {
   const { about } = site;
@@ -84,7 +85,7 @@ export default function About() {
           </p>
           <p className="accent-block__line">Everything above, on one page.</p>
           <div className="accent-block__actions">
-            <a className="btn btn--on-accent" href={site.cv}>
+            <a className="btn btn--on-accent" href={asset(site.cv)}>
               Download CV
             </a>
           </div>

@@ -4,6 +4,7 @@ import ProjectRow from "../components/ProjectRow.jsx";
 import ContactBlock from "../components/ContactBlock.jsx";
 import { projects } from "../data/projects.js";
 import { site } from "../data/site.js";
+import asset from "../data/asset.js";
 
 export default function Home() {
   return (
@@ -49,7 +50,7 @@ export default function Home() {
           <Link className="btn btn--ghost" to="/about">
             More about me
           </Link>
-          <a className="btn btn--ghost" href={site.cv}>
+          <a className="btn btn--ghost" href={asset(site.cv)}>
             Download CV
           </a>
         </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import asset from "../data/asset.js";
 
 export default function Gallery({ shots, title }) {
   const [open, setOpen] = useState(null);
@@ -35,7 +36,7 @@ export default function Gallery({ shots, title }) {
             onClick={() => setOpen(i)}
             aria-label={`Enlarge screenshot ${i + 1} of ${n}`}
           >
-            <img src={src} alt="" loading="lazy" />
+            <img src={asset(src)} alt="" loading="lazy" />
           </button>
         ))}
       </div>
@@ -43,7 +44,7 @@ export default function Gallery({ shots, title }) {
       {open !== null && (
         <div className="lightbox" role="dialog" aria-modal="true" aria-label={`${title} screenshots`}>
           <figure className="lightbox__figure">
-            <img src={shots[open]} alt={`${title}, screenshot ${open + 1}`} />
+            <img src={asset(shots[open])} alt={`${title}, screenshot ${open + 1}`} />
           </figure>
           <div className="lightbox__bar">
             <button
