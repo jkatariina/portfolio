@@ -20,13 +20,13 @@ export const site = {
 
   about: {
     heading: "Hi, I'm Jenna.",
-    lead: "I'm studying to become a frontend developer at Nackademin, and I'm looking for an LIA placement in Stockholm.",
+    lead: "I'm studying to become a frontend developer at Nackademin and I'm looking for an LIA placement in Stockholm.",
     gotHere:
-      "I came to code through design. I liked how good interfaces looked and worked, and wanted to learn how to build them myself.",
+      "I came to code through design. I liked how good interfaces looked and worked and I wanted to learn how to build them myself.",
     careAbout:
       "My favourite moment is when an idea comes alive on screen. I aim for clean, simple design that's easy to use for everyone, on any device.",
     outside:
-      "When I'm not coding, you'll find me at the gym, with a good book, or spending time with friends and family.",
+      "When I'm not coding, you'll find me at the gym, with a good book or spending time with friends and family.",
     timeline: [
       { when: "Before", what: "Store manager, buyer and head of foreign trade in Finland." },
       { when: "2025", what: "Started the Frontend Developer program at Nackademin." },
@@ -34,9 +34,10 @@ export const site = {
     ],
     skills: [
       { group: "Frontend", items: ["React", "JavaScript", "HTML", "CSS", "Sass", "Accessibility"] },
+      { group: "Backend", items: ["Node.js", "Express.js", "MySQL", "SQLite"] },
       { group: "Design", items: ["UX/UI design", "Figma"] },
-      { group: "Tools and methods", items: ["Git", "Vite", "Claude Code", "Agile / Scrum"] },
-      { group: "Learning", items: ["Node.js", "Express.js"] },
+      { group: "Tools and methods", items: ["Git", "GitHub", "Vite", "Claude Code", "Agile / Scrum"] },
+      { group: "Learning", items: ["Next.js", "TypeScript", "Tailwind CSS", "Vitest"] },
     ],
   },
 

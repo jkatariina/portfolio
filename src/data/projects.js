@@ -1,9 +1,31 @@
 export const projects = [
   {
+    slug: "hotel-booking-app",
+    title: "Hotel Auroriel",
+    summary:
+      "A hotel booking app: guests pick a Single or Double room, fill in a booking form and get a booking number. An admin page lets the hotel manage every booking.",
+    team: "Solo project",
+    stack: ["React", "Node.js", "Express", "MySQL"],
+    year: "2026",
+    live: "",
+    code: "https://github.com/jkatariina/hotel-booking-app",
+    cover: "/images/hotel-booking-app-cover.jpg",
+    video: "/videos/hotel-booking-app.mp4",
+    shots: [],
+    story: {
+      brief:
+        "A small hotel needed a way to take bookings online: guests choose a room and book it and the hotel keeps track of who is coming.",
+      built:
+        "A React frontend on top of a Node.js and Express API, with bookings saved in MySQL. All the SQL lives in one DAO, the input is validated on the server and the admin page can list, update and delete bookings.",
+      hard: "",
+      learned: "",
+    },
+  },
+  {
     slug: "sprintboard",
     title: "Sprintboard",
     summary:
-      "A sprint board for planning work: tasks live as cards in columns, and you move them along as the work moves forward. Built as a graded course assignment.",
+      "A sprint board for planning work: tasks live as cards in columns and you move them along as the work moves forward.",
     team: "Solo project",
     stack: ["React", "Vite", "Git"],
     year: "2026",
@@ -14,7 +36,7 @@ export const projects = [
     shots: [],
     story: {
       brief:
-        "A course assignment: build a tool for planning a sprint. Tasks needed somewhere to live, and a way to move forward as the work did.",
+        "A course assignment: build a tool for planning a sprint. Tasks needed somewhere to live and a way to move forward as the work did.",
       built:
         "A board of columns in React, with tasks as cards you move between them. State is kept in the app and the layout works down to phone width.",
       hard: "",
@@ -38,7 +60,7 @@ export const projects = [
       brief:
         "Three weeks, two classes and one idea: let people swap plants with neighbours instead of buying new ones.",
       built:
-        "I worked on the frontend: the Leaflet map of nearby plants, the form for adding your own, and the pages around them, against the backend team's API.",
+        "I worked on the frontend: the Leaflet map of nearby plants, the form for adding your own and the pages around them, against the backend team's API.",
       hard: "",
       learned: "",
     },
